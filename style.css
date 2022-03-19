@@ -9,7 +9,7 @@
   display: grid;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
     url("background.jpeg");
-  grid-template-columns: 1fr 0.1fr;
+  grid-template-columns: 1fr 0.4fr;
   grid-template-rows: 0fr 1fr 0.2fr;
   height: 600px;
   width: 100%;
