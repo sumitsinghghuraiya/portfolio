@@ -9,13 +9,8 @@
   display: grid;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
     url("background.jpeg");
-<<<<<<< HEAD
-  grid-template-columns: 1fr 0.2fr;
-  grid-template-rows: 0.2fr 1fr 0.2fr;
-=======
-  grid-template-columns: 1fr 0fr;
-  grid-template-rows: 0.2fr 1fr 0fr;
->>>>>>> 470c19808c5cc25f165b141e749f561de7302ae1
+  grid-template-columns: 1fr 0.1fr;
+  grid-template-rows: 0fr 1fr 0.2fr;
   height: 600px;
   width: 100%;
 }
