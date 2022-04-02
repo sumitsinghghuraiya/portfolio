@@ -4,17 +4,22 @@
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
   color: white;
+  background-attachment: scroll;
+  cursor: default;
 }
 .div1 {
   display: grid;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
-    url("background.jpeg");
+  box-sizing: border-box;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("./images/pexels-s-migaj-747964.jpg");
   background-attachment: scroll;
+  background-size: cover;
   grid-template-columns: 1fr 0.1fr;
   grid-template-rows: 0fr 1fr 0.2fr;
-  height: 600px;
+  height: 100vh;
   width: 100%;
 }
+
 .nav {
   display: flex;
   grid-column: 1 / span 2;
@@ -86,7 +91,7 @@
 
 .imagekiclass {
   display: grid;
-  background-image: url("logic.jpeg");
+  background-image: url("./images/WhatsApp\ Image\ 2022-03-26\ at\ 02.27.50.jpeg");
   width: 300px;
   height: 350px;
   background-size: cover;
@@ -120,4 +125,111 @@
 }
 .footer {
   background-color: rgba(0, 0, 0, 0.2);
+}
+.div3 {
+  display: grid;
+  height: 100vh;
+  box-sizing: border-box;
+  text-size-adjust: auto;
+  font-size:medium;
+  background-image: url("./images/pexels-gabriel-peter-696644.jpg");
+  background-size: cover;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.15fr;
+}
+.moh {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.maya {
+  display: block;
+  margin: 20px;
+  width:480px;
+  font-size:1.4em;
+  place-self: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  border: 10px solid rgba(0, 0, 0, 0.3);
+}
+.maya p {
+  color: white;
+}
+.meriphoto {
+  display: inline-block;
+  height: 250px;
+  width: 190px;
+  background-image: url("./images/WhatsApp Image 2022-03-17 at 11.53.06.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: grey;
+  align-self: center;
+  transition: 0.5s;
+}
+.meriphoto:hover{
+  border: 3px solid aqua;
+  border-right:4px solid aqua;
+  border-bottom:5px solid yellow;
+  box-shadow: 0 0 15px yellow;
+}
+.links{
+  background-color:#262626;
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.links ul{ display:flex;
+z-index:1;}
+.links ul li
+{
+  position: relative;
+  display:flex;
+  width:60px;
+  height:60px;
+  font-size:30px;
+  justify-content: center;
+  align-items: center;
+  color:#666;
+  background-color: #171515;
+  line-height: 60px;
+  box-sizing: border-box; 
+  border-radius:50%;
+  margin:0 15px;
+  cursor:pointer;
+  transition:.5s;
+
+}
+.links ul li:before{
+  position:absolute;
+  content:'';
+  top:0;
+  left:0;
+  background: #d35400;
+  height:100%;
+  width:100%;
+  border-radius:50%;
+  z-index: -1;
+  transform: scale(0.9);
+  transition: all 0.4s;
+  
+}
+.links ul li:hover:before
+{
+  filter: blur(3px);
+  transform: scale(1.15);
+  box-shadow:0px 0px 15px #d35400;
+}
+.links ul li :hover{
+  color:#ffa500;
+  text-shadow: 0px 0px 15px #d35400;
+  box-shadow: 0px 0px 15px #d35400;
+}
+
+.links ul li i
+{
+  color:#666;
 }
